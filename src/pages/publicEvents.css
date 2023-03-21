@@ -1,0 +1,208 @@
+.slider-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.slider-bar {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    /* added box-sizing property */
+    margin-bottom: 50px;
+}
+
+.slider-button {
+    padding: 8px 16px;
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0e1f51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 2px solid #0e1f51;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.slider-button:hover,
+.slider-button.active {
+    color: #fff;
+    background-color: #0e1f51;
+}
+
+.slider {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ff3e54;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    /* hide any text content */
+    color: #ff3e54;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    color: #fff;
+    opacity: 1;
+    background-color: #0e1f51;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+
+/* Define the SVG arrow icon */
+
+.arrow-icon {
+    fill: #ff3e54;
+    height: 30px;
+    width: 30px;
+    transition: all 0.2s ease;
+}
+
+.prev-button:hover .arrow-icon,
+.next-button:hover .arrow-icon {
+    fill: #fff;
+}
+
+
+/* get involved section */
+
+.box {
+    margin: auto;
+    width: 945px;
+    height: 295px;
+    border: 3px#3B008D;
+    background-color: #3B008D;
+    background-image: url("public Events.png");
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -250px;
+}
+
+.work {
+    margin: auto;
+    border: 1px black;
+    height: 1000px;
+    padding: 10px;
+    align-items: center;
+}
+
+.txt {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+/* .header {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    border: 3px black;
+    background-color: #0E1F51;
+    padding: 10px;
+} */
+
+.bannerpublicE {
+    background-color: #0e1f51;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titlepublicE {
+    color: #ff3e54;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.subtitlepublicE {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#phead {
+    text-align: center;
+    color: "#ff3e54";
+}
+
+button {
+    margin-right: 20px;
+    border-radius: 7px;
+    border-color: transparent;
+    width: 110px;
+    height: 40px;
+}
